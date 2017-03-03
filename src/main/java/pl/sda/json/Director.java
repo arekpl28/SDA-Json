@@ -1,6 +1,6 @@
 package pl.sda.json;
 
-public class MovieDirector {
+public class Director {
     private String firstName;
     private String lastName;
 

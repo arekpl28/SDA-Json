@@ -20,11 +20,12 @@ public class JacksonTest {
         String jsonToDeserialize = "{\"originalTitle\":\"Saving Private Ryan\",\"plTitle\":\"Szeregowiec Ryan\",\"director\":" +
                 "{\"firstName\":\"Steven\",\"lastName\":\"Spielberg\"}}";
 
-//        ObjectMapper mapper = new ObjectMapper();
-//        Movie movie = mapper.readValue(jsonToDeserialize, Movie.class);
-//
-//        Assert.assertEquals("Saving Private Ryan", movie.getOriginalTitle());
-//        Assert.assertEquals("Szeregowiec Ryan", movie.getPlTitle());
+        ObjectMapper mapper = new ObjectMapper();
+        Movie movie = mapper.readValue(jsonToDeserialize, Movie.class);
+
+        Assert.assertEquals("Saving Private Ryan", movie.getOriginalTitle());
+        Assert.assertEquals("Szeregowiec Ryan", movie.getPlTitle());
+        Assert.assertEquals("Steven",movie.getDirector().getFirstName());
     }
 
     @Test

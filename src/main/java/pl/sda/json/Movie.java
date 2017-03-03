@@ -3,14 +3,14 @@ package pl.sda.json;
 public class Movie {
     private String originalTitle;
     private String plTitle;
-    private MovieDirector movieDirector;
+    private Director director;
 
-    public MovieDirector getMovieDirector() {
-        return movieDirector;
+    public Director getDirector() {
+        return director;
     }
 
-    public void setMovieDirector(MovieDirector movieDirector) {
-        this.movieDirector = movieDirector;
+    public void setDirector(Director director) {
+        this.director = director;
     }
 
     public String getOriginalTitle() {
